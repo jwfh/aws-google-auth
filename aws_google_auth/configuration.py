@@ -26,7 +26,7 @@ class Configuration(object):
         self.idp_id = None
         self.password = None
         self.profile = "sts"
-        self.region = "ap-southeast-2"
+        self.region = "us-east-1"
         self.role_arn = None
         self.__saml_cache = None
         self.sp_id = None
@@ -50,7 +50,7 @@ class Configuration(object):
 
     @property
     def max_duration(self):
-        return 43200
+        return 4 * 3600
 
     @property
     def credentials_file(self):
